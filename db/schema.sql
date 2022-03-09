@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS userList_db;
+CREATE DATABASE userList_db;
