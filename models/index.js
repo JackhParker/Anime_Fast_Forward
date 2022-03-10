@@ -1,3 +1,12 @@
 const User = require('./User');
+const AnimePList = require('./AnimePList');
 
-module.exports = { User };
+AnimePList.belongsTo(User, {
+    foreignKey: `user_id`,
+});
+
+User.hasMany(AnimePList, {
+    foreignKey: `user_id`,
+});
+
+module.exports = { User, AnimePList };
