@@ -1,11 +1,23 @@
 const router = require('express').Router();
-const { User } = require('../models');
+const { User, AnimePList } = require('../models');
 const withAuth = require('../utils/auth');
 
 
-router.get('/', withAuth, async (req, res) => {
+router.get('/', async (req, res) => {
   try {
-    
+    res.render('homepage', {
+
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.get('/dashboard', async (req, res) => {
+  try {
+    res.render('dashboard', {
+// make sure your not pulling the object animePList but the info for it
+    });
   } catch (err) {
     res.status(500).json(err);
   }
