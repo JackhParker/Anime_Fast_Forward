@@ -11,4 +11,12 @@ User.hasMany(AnimePList, {
     foreignKey: `user_id`,
 });
 
+TheAnime.hasMany(SpecificEpisode, {
+    foreignKey: `theanime_id`
+});
+
+SpecificEpisode.belongsTo(TheAnime, {
+    foreignKey: `theanime_id`
+});
+
 module.exports = { User, AnimePList, SpecificEpisode, TheAnime };
