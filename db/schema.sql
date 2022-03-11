@@ -1,2 +1,2 @@
-DROP DATABASE IF EXISTS userList_db;
-CREATE DATABASE userList_db;
+DROP DATABASE IF EXISTS animePList_db;
+CREATE DATABASE animePList_db;
