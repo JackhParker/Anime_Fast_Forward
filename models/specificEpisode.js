@@ -5,21 +5,31 @@ class SpecificEpisode extends Model {}
 
 SpecificEpisode.init(
     {
-        episode_id: {
+        animeSeries: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+        animeID: {
             type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,
             autoIncrement: true,
         },
-        episode_name: {
-            type: DataTypes.STRING,
+        episode: {
+            type: DataTypes.INTEGER,
             allowNull: false,
+            primaryKey: true,
+            autoIncrement: true,
         },
-        filler_canon: {
+        isFiller: {
             type: DataTypes.BOOLEAN,
             allowNull: false,
         },
-        synopsis: {
+        epTit: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+        description: {
             type: DataTypes.STRING,
             allowNull: false
         },
