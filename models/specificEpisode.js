@@ -5,11 +5,11 @@ class SpecificEpisode extends Model {}
 
 SpecificEpisode.init(
     {
-        animeSeries: {
+        series: {
             type: DataTypes.STRING,
             allowNull: false,
         },
-        animeID: {
+        aniID: {
             type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,
