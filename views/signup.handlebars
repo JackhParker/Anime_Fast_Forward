@@ -1,18 +1,39 @@
-<div class="card">
-    <h3 class="card-header">Sign Up</h3>
-    <form id="signup-form" class="card-body">
-// username signup
-    <label for="username-signup" class="form-label">Username</label>
-    <input id="username-signup" type="text" class="form-input" />
-// password signup
-    <label class="form-label" for="password-signup">Password</label>
-    <input  id="password-signup" type="password" class="form-input" />
-// submit 
-    <button type="submit" class="btn">Signup!</button>
-// login if already signed up 
-    <a class="login-link" href="/login">Log in instead</a>
-</form>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  </head>
+<body>
+  
+ <div class="card">
+      <h1 class="card-header">Sign Up (:</h1>
+      <form id="login-form" class="card-body">
+
+        <div class="form-floating mb-3">
+  <input type="password" class="form-control" id="floatingPassword" placeholder="Username">
+  <label for="floatingPassword">Username</label>
+</div>
+    <div class="form-floating mb-3">
+  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+  <label for="floatingInput">Email address</label>
 </div>
 
-// dont forget to update this !!!
+<div class="form-floating mb-3">
+  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+  <label for="floatingPassword">Password</label>
+</div>
+
+
+    <span class="badge rounded-pill bg-primary"><button type="submit" class="btn">Sign Up!</button></span>
+
+    
+ </form>
+</div>
+
+</body>
 <script src="/js/signup.js"></script>
