@@ -11,6 +11,7 @@ router.get('/', async (req, res) => {
   }
 });
 
+// make sure to add the auth to the things for the my list and dashboard
 router.get('/dashboard', async (req, res) => {
   try {
     res.render('dashboard', {
@@ -35,6 +36,16 @@ router.get('/anime/episodes/:id', async (req, res) => {
   try {
     res.render('specificEpisode', {
 // make sure your not pulling the object animePList but the info for it
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.get(`/signup`, async (req, res) => {
+  try {
+    res.render(`signup`,{
+
     });
   } catch (err) {
     res.status(500).json(err);
