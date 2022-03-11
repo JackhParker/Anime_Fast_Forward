@@ -3,7 +3,7 @@
 
 
 var animeSeries =["Full Metal Alchemist"]
-var animeID = ["121"]
+var animeID = [121]
 var animeEpCt = ["51"]
 
 

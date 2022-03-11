@@ -13,13 +13,13 @@ SpecificEpisode.init(
             type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,
-            autoIncrement: true,
+        
         },
         episode: {
             type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,
-            autoIncrement: true,
+    
         },
         isFiller: {
             type: DataTypes.BOOLEAN,
