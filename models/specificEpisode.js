@@ -12,13 +12,13 @@ SpecificEpisode.init(
         aniID: {
             type: DataTypes.INTEGER,
             allowNull: false,
-            primaryKey: true,
+    
         
         },
         episode: {
             type: DataTypes.INTEGER,
             allowNull: false,
-            primaryKey: true,
+           
     
         },
         isFiller: {
@@ -30,7 +30,7 @@ SpecificEpisode.init(
             allowNull: false,
         },
         description: {
-            type: DataTypes.STRING,
+            type: DataTypes.TEXT,
             allowNull: false
         },
     },
@@ -38,7 +38,7 @@ SpecificEpisode.init(
         sequelize,
         timestamps: false,
         freezeTableName: true,
-        underscored: true,
+        underscored: false,
         modelName: 'SpecificEpisode',
     }
 );
