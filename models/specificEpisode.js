@@ -12,13 +12,10 @@ SpecificEpisode.init(
         aniID: {
             type: DataTypes.INTEGER,
             allowNull: false,
-    
-        
         },
         episode: {
             type: DataTypes.INTEGER,
             allowNull: false,
-           
     
         },
         isFiller: {
