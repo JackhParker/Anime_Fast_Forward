@@ -22,7 +22,7 @@ router.get('/dashboard', async (req, res) => {
   }
 });
 
-router.get('/anime/:id', async (req, res) => {
+router.get('/:anime/', async (req, res) => {
   try {
     res.render('animeEpisodes', {
 // make sure your not pulling the object animePList but the info for it
@@ -32,7 +32,7 @@ router.get('/anime/:id', async (req, res) => {
   }
 });
 
-router.get('/anime/episodes/:id', async (req, res) => {
+router.get('/:anime/episodes/:id', async (req, res) => {
   try {
     res.render('specificEpisode', {
 // make sure your not pulling the object animePList but the info for it
