@@ -7,28 +7,31 @@ SpecificEpisode.init(
     {
         series: {
             type: DataTypes.STRING,
-            allowNull: false,
+            allowNull: true,
         },
         aniID: {
             type: DataTypes.INTEGER,
-            allowNull: false,
+            allowNull: true,
+    
+        
         },
         episode: {
             type: DataTypes.INTEGER,
-            allowNull: false,
+            allowNull: true,
+           
     
         },
         isFiller: {
             type: DataTypes.BOOLEAN,
-            allowNull: false,
+            allowNull: true,
         },
         epTit: {
             type: DataTypes.STRING,
-            allowNull: false,
+            allowNull: true,
         },
         description: {
             type: DataTypes.TEXT,
-            allowNull: false
+            allowNull: true
         },
     },
     {
