@@ -1,0 +1,11 @@
+.ratingStars i {
+    cursor: pointer;
+}
+
+.ratingStars:hover i {
+    color: gold;
+}
+
+.ratingStars i:hover ~ i {
+    color: white;
+}

@@ -1,11 +1,8 @@
 //const { json} = require("express/lib/response")
 
-
-
 var animeSeries =["Full Metal Alchemist"]
 var animeID = [121]
 var animeEpCt = ["51"]
-
 
 function getInfo(){
 for (let k=0 ;k<animeID.length; k++  )
