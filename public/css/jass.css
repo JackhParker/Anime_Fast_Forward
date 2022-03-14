@@ -8,3 +8,55 @@
 .ratingStars:hover i {
     color: gold;
 }
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #ffffff;
+    background-color: #eef1f1;
+    background-image: url(../assets/starback.jpg);
+    background-size: cover;
+    
+  }
+  
+  a {
+    color: #47b2e4;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #73c5eb;
+    text-decoration: none;
+  }
+  
+  h1, h2, h3, h4 {
+    font-family: "Open sans", sans-serif;
+    justify-content: center;
+    color: rgb(233, 224, 224);
+  }
+  h5, h6 , h2{
+      color: rgb(7, 7, 7)
+      
+  }
+
+  .dark-bg {
+background-image: url(../assets/heroback.jpg);
+background-size: cover;
+background-position: center center;
+  }
+
+  #hero .container{
+      height: 250px;
+  }
+  .navbar{
+  padding:10px;
+  background-color: aqua;
+
+  }
+  .bg-light{
+      background-color: #47b2e4;
+      color: rgb(184, 54, 54);
+  }
+  .card-title {
+      text-align: center;
+     
+  }
