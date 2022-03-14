@@ -1,11 +1,10 @@
 .ratingStars i {
     cursor: pointer;
+    display: flex;
+    display: inline;
+    padding: 3px;
 }
 
 .ratingStars:hover i {
     color: gold;
-}
-
-.ratingStars i:hover ~ i {
-    color: white;
 }
