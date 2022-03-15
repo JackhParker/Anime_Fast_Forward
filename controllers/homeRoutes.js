@@ -24,8 +24,15 @@ router.get('/dashboard', async (req, res) => {
 
 router.get('/:anime/:id', async (req, res) => {
   try {
+    const dbData = await SpecificEpisode.findAll({
+      where:({aniID:req.params.id
+
+      })
+    })
+    const seriesData = dbData.map(eachObj =>eachObj.get({plain:true}))
+    console.log (seriesData)
     res.render('animeEpisodes', {
-// make sure your not pulling the object animePList but the info for it
+    seriesData
     });
   } catch (err) {
     res.status(500).json(err);
@@ -34,7 +41,18 @@ router.get('/:anime/:id', async (req, res) => {
 
 router.get('/:anime/episodes/:id', async (req, res) => {
   try {
+    const epData = await SpecificEpisode.findAll({
+      where:({
+        series:req.params.anime,
+        episode:req.params.id
+      })
+    })
+    const episodeData = epData.map(eachObj =>eachObj.get({plain:true}))
+    console.log (episodeData)
     res.render('episode', {
+    episodeData
+    
+   
 // make sure your not pulling the object animePList but the info for it
     });
   } catch (err) {

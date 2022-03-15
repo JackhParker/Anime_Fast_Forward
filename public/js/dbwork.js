@@ -34,7 +34,7 @@ if (i >=animeEpCt[k])
  episode= i
   console.log(episode)
   var dbBuild = "https://api.jikan.moe/v4/anime/"+id +"/episodes/"+episode
-  setTimeout(delay,2500)
+  setTimeout(delay,5000)
   console.log(dbBuild)
   function delay(){
   
