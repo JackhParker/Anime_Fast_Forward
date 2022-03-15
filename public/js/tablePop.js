@@ -1,6 +1,20 @@
 const mysql = require(`mysql`);
 const express = require(`express`);
 const app = express();
+{
+document.getElementById("n").addEventListener("click",naruto )
+}
+function naruto(){n= 51+64+1013+365+291+153+500}
+
+            
+console.log(n)
+
+
+
+
+
+
+
 
 app.get(`/`, (req, res) => {
     fetchData(res);
@@ -10,7 +24,7 @@ app.get(`/`, (req, res) => {
 const db = mysql.createConnection({
     host: `localhost`,
     user: `root`,
-    password: `BigPassWord!??69`,
+    password: `Password1!`,
     database: `animePList_db`,
 });
 
