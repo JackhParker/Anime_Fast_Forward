@@ -66,3 +66,31 @@ background-position: center center;
       width: 350px;
       
   }
+  btn2 {
+    
+        color: #ffffff;
+        background-color: #a598aa;
+        width: 350px;
+        
+  }
+  .login{
+    color: #ffffff;
+    background-color: #470663;
+    width: 1265px;
+    text-align: center;
+    border:none;
+    margin: 4px
+    
+    
+
+  }
+  .signup{
+    color: #ffffff;
+    background-color: #470663;
+    width: 1265px;
+    text-align: center;
+    border:none;
+    margin: 4px
+    
+
+  }

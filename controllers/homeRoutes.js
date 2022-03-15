@@ -25,7 +25,7 @@ router.get('/dashboard', async (req, res) => {
 router.get('/:anime/:id', async (req, res) => {
   try {
     res.render('animeEpisodes', {
-// make sure your not pulling the object animePList but the info for it
+
     });
   } catch (err) {
     res.status(500).json(err);
@@ -35,7 +35,8 @@ router.get('/:anime/:id', async (req, res) => {
 router.get('/:anime/episodes/:id', async (req, res) => {
   try {
     res.render('episode', {
-// make sure your not pulling the object animePList but the info for it
+
+
     });
   } catch (err) {
     res.status(500).json(err);
