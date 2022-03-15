@@ -43,7 +43,7 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <div class="site-heading">
-                         <center>   <h1></Episodes></h1> </center>
+                         <center>   <h1>{{episodeData.[0].series}}</h1> </center>
                           <center><div class="ratingStars"> </div>
     <i class="rating__star far fa-star"></i>
     <i class="rating__star far fa-star"></i>
@@ -59,8 +59,17 @@
         
 
 
-
-
+<table class="table table-striped table-hover">
+  <center><h1>Episode</h1></center>
+  {{#each episodeData as |epInfo|}}
+   
+   <p>{{epInfo.episode}}</p>
+   <p>{{epInfo.epTit}}</p>
+   <p>filler status {{epInfo.isFiller}}</p>
+   <p>{{epInfo.description}}</p>
+   {{/each}}
+  
+</table>
         </section>
 </body>
-<script src="/js/tabplePop.js"></script>
+
